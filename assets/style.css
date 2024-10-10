@@ -1,5 +1,10 @@
 /*Inline critical CSS */
-   
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap') format('woff2');
+    font-display: swap; /* Affiche une police de secours pendant le chargement */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     max-width: 1240px;
@@ -86,6 +91,8 @@ width: 20px;
     background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"%3E%3Cpath d="M11.354 1.354a.5.5 0 0 1 0 .708L6.707 6.707l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E'); /* Chevron gauche en noir */
 }
 
+
+
 .carousel-control-next-icon {
     background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"%3E%3Cpath d="M4.646 1.354a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.293 6.707 4.646 2.061a.5.5 0 0 1 0-.707z"/%3E%3C/svg%3E'); /* Chevron droit en noir */
 }
@@ -138,11 +145,15 @@ width: 80%;
 font-size: 14px;
 }
 
-
 .title{
 text-align: center;
 padding-block: 2em;
 }
+
+.gallery {
+    display: none; 
+}
+
 .gallery .nav {
 justify-content: center;
 }
