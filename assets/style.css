@@ -71,6 +71,25 @@ color: #000
 width: 20px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white; /* Fond blanc */
+    border-radius: 50%; /* Forme ronde */
+    width: 50px; /* Taille du cercle */
+    height: 50px; /* Taille du cercle */
+    background-size: 20px; /* Taille des chevrons */
+    background-position: center; /* Centre les chevrons */
+    background-repeat: no-repeat; /* Évite la répétition de l'icône */
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"%3E%3Cpath d="M11.354 1.354a.5.5 0 0 1 0 .708L6.707 6.707l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E'); /* Chevron gauche en noir */
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"%3E%3Cpath d="M4.646 1.354a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1 0 .708l-5 5a.5.5 0 0 1-.708-.708L9.293 6.707 4.646 2.061a.5.5 0 0 1 0-.707z"/%3E%3C/svg%3E'); /* Chevron droit en noir */
+}
+
 #about {
 display: flex;
 background-color: #F6D2B8;
