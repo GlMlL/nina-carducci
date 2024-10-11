@@ -1,5 +1,9 @@
 /*Inline critical CSS */
-
+@font-face {
+    font-family: 'Inter';
+    src: url('https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap') format('woff2');
+    font-display: swap; /* Affiche une police de secours pendant le chargement */
+}
 
 body {
     font-family: 'Inter', sans-serif;
